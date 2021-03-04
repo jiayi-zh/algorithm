@@ -5,7 +5,7 @@ import (
 )
 
 func Test(t *testing.T) {
-
+	assert(t, "aa", "aa", longestPalindrome("aa"))
 }
 
 func assert(t *testing.T, item string, except, now interface{}) {
