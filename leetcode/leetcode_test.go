@@ -1,16 +1,33 @@
 package leetcode
 
 import (
+	"strings"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	constructMaximumBinaryTree([]int{3, 2, 1, 6, 0, 5})
+	builder := strings.Builder{}
+	builder.WriteByte(1)
 
 	//tree := buildTestTree()
-	//flatten(tree)
-
-	assert(t, "aa", "aa", longestPalindrome("aa"))
+	//tree1 := &TreeNode{
+	//	Val: 0,
+	//	Left: &TreeNode{
+	//		Val: 0,
+	//	},
+	//}
+	//tree2 := &TreeNode{
+	//	Val: 0,
+	//	Right: &TreeNode{
+	//		Val: 0,
+	//	},
+	//}
+	//
+	//fmt.Println(customSerialize(tree1))
+	//fmt.Println(customSerialize(tree2))
+	////flatten(tree)
+	//
+	//assert(t, "aa", "aa", longestPalindrome("aa"))
 }
 
 func assert(t *testing.T, item string, except, now interface{}) {
@@ -19,6 +36,22 @@ func assert(t *testing.T, item string, except, now interface{}) {
 	}
 	// TODO 回顾反射, 判断类型与值是否匹配
 }
+
+func buildLeetcodeTreeTestDemo(arr []int) {
+
+}
+
+//func buildLeetcodeTreeTestDemoChild(arr []int, l, r int, pns []*TreeNode) {
+//	cPns := make([]*TreeNode, 0, len(pns)<<1)
+//	for i, pn := range pns {
+//		if arr[i*2] == nil {
+//
+//		}
+//		pn.Left = *TreeNode{
+//			Val:,
+//		}
+//	}
+//}
 
 func buildTestTree() *TreeNode {
 	l31 := TreeNode{
