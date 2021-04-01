@@ -1,26 +1,40 @@
 package leetcode
 
 import (
-	"strings"
+	"fmt"
 	"testing"
 )
 
 func Test(t *testing.T) {
-	builder := strings.Builder{}
-	builder.WriteByte(1)
 
 	//tree := buildTestTree()
+
+	tree := &TreeNode{
+		Val: 5,
+		Left: &TreeNode{
+			Val: 4,
+		},
+		Right: &TreeNode{
+			Val: 6,
+			Left: &TreeNode{
+				Val: 3,
+			},
+			Right: &TreeNode{
+				Val: 7,
+			},
+		},
+	}
+
+	res := isValidBST(tree)
+	fmt.Println(res)
+
 	//tree1 := &TreeNode{
 	//	Val: 0,
 	//	Left: &TreeNode{
 	//		Val: 0,
 	//	},
 	//}
-	//tree2 := &TreeNode{
-	//	Val: 0,
-	//	Right: &TreeNode{
-	//		Val: 0,
-	//	},
+
 	//}
 	//
 	//fmt.Println(customSerialize(tree1))
