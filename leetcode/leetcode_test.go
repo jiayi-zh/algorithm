@@ -9,24 +9,7 @@ func Test(t *testing.T) {
 
 	//tree := buildTestTree()
 
-	tree := &TreeNode{
-		Val: 5,
-		Left: &TreeNode{
-			Val: 4,
-		},
-		Right: &TreeNode{
-			Val: 6,
-			Left: &TreeNode{
-				Val: 3,
-			},
-			Right: &TreeNode{
-				Val: 7,
-			},
-		},
-	}
-
-	res := isValidBST(tree)
-	fmt.Println(res)
+	fmt.Println(coinChange([]int{1, 2, 5}, 11))
 
 	//tree1 := &TreeNode{
 	//	Val: 0,
